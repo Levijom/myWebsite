@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<HTML>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+			
+				<nav>
+					<ul>
+						<li><a href="Home.html"> Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Projects.html">Projects</a></li>
+						<li><a href="Tools.html">Tools</a></li>
+						<li><a href="Upcoming.html">Upcoming</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			
+			</div>
+		</header>
+		
+		<p>Using some of the most advanced computing algorithms available today, this page will help make better hiring decisions about potentioal employers</p>
+		<p>Though the majority of how it works must be keept secret, we can reveal the basics of how it works;</p>
+		<p>In short, the name of a prospective worker is entered in the box, the name is looked up in an advanced database, and if the subject is a viable worker, the verdict is returned as a hit.</p>
+		<p>We can say that our machine is, as far as could be told from our testing, 100% accurate!</p>
+		<p>Go ahead and try it.  Simply enter the name of an employee below, and a highly accurate hiring decision will be presented</p>
+		<p>First Name: <input id="first_name">	Last Name: <input id="last_name">	<button onclick="myFunction()">Submit</button>
+		<p id="results"></p>
+		
+		<script>
+			function myFunction(){
+				var first, text;
+					first = document.getElementById("first_name").value;
+				var fUp = first.toUpperCase();
+				var last, text;
+					last = document.getElementById("last_name").value;
+				var lUp = last.toUpperCase();
+				if(fUp == "LEVI" && lUp == "MASTERS"){
+					text = "Our database shows that this is a good candidate!";
+				}
+				else if(fUp.length < 1 || lUp.length < 1){
+					text = "Pleases enter a first and last name";
+				}
+				else{
+					text = "There was no match to your requirements under this name.";
+				}
+				document.getElementById("results").innerHTML = text;
+			}
+		</script>
+	</body>
+</HTML>

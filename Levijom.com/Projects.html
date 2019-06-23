@@ -15,7 +15,7 @@
 						<li><a href="Home.html"> Home</a></li>
 						<li><a href="About.html">About</a></li>
 						<li><a href="Projects.html">Projects</a></li>
-						<li><a href="Tools.html">Tools</a></li>
+						<li><a href="Freelance.html">Freelance</a></li>
 						<li><a href="Upcoming.html">Upcoming</a></li>
 						<li><a href="Contact.html">Contact</a></li>
 					</ul>
@@ -24,14 +24,45 @@
 			</div>
 		</header>
 		
-		<h1>My Projects</h1>
+		<h1>"Candidate Sorter 2000"</h1>
+		<p>Using some of the most advanced computing algorithms available today, this page will help make better hiring decisions about potential employers</p>
+		<p>Though the majority of how it works must be kept secret, we can reveal the basics of how it works;</p>
+		<p>In short, the name of a prospective worker is entered in the box, the name is looked up in an advanced database, and if the subject is a viable worker, the verdict is returned as a hit.</p>
+		<p>We can say that our machine is, as far as could be told from our testing, 100% accurate!</p>
+		<p>Go ahead and try it.  Simply enter the name of an employee below, and a highly accurate hiring decision will be presented</p>
+		<p>First Name: <input id="first_name">	Last Name: <input id="last_name">	<button onclick="myFunction()">Submit</button>
+		<p id="results"></p>
+		
+		<script>
+			function myFunction(){
+				var first, text;
+					first = document.getElementById("first_name").value;
+				var fUp = first.toUpperCase();
+				var last, text;
+					last = document.getElementById("last_name").value;
+				var lUp = last.toUpperCase();
+				if(fUp == "LEVI" && lUp == "MASTERS"){
+					text = "Our database shows that this is a good candidate!";
+				}
+				else if(fUp.length < 1 || lUp.length < 1){
+					text = "Pleases enter a first and last name";
+				}
+				else{
+					text = "There was no match to your requirements under this name.";
+				}
+				document.getElementById("results").innerHTML = text;
+			}
+		</script>
+		<br>
+		<br>
+		<h1>"Base 10 to Binary"</h1>
 		<a href="Base_10_to_Binary_Final.py" download="Base_10_to_Binary_Final.py">Download Source Code</a>
-		<p>The file must be run withing the python idle</p>
+		<p>The file must be run within the python idle</p>
 		<p>
 		<img src="10_Binary_Source_Screenshot.png"/>
 		<p>The program starts with user input.  It then looks to see if the number the user input it a power of two (2^some number). If it is, that number becomes n.  If it is not, it finds closest power of two below it.  Then the program tests to see if the base (user input) can be divided by n.  When it can, it prints one, when it cannot, it prints a 0.  Each time it tests if b is divisible by n, n gets divided by two, becoming the next lowest power of two.  This test is run until n becomes 1, and our last digit in binary is stated.</p>
 		<p><img src="10_to_binary_picture.png"/></p>
-		<p>I am currently working on creating a pthon checkers game.  Once I finish it, I would like to try and set up a neural network that learns optimal playing strategies</p>
+		<p>I am currently working on creating a python checkers game.  Once I finish it, I would like to try and set up a neural network that learns optimal playing strategies</p>
 		
 	</body>
 </html>

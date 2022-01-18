@@ -8,14 +8,14 @@ body{
 h1{
 	color:#6a959d;
 }
+p{
 
-/* nav bar */
+}
+a{
+	color: white;
+}
 header{
 	background:#012c34;
-}
-.container{
-	width:80%;
-	margin:0 auto;
 }
 nav{
 	text-align:center;
@@ -53,5 +53,24 @@ nav a::before{
 }
 nav a:hover::before{
 	width:100%;
-	
+
+}
+.container{
+	width:80%;
+	margin:0 auto;
+}
+.mainContent{
+	width:50%;
+	margin:0 auto;
+}
+.leftList{
+	text-align: left;
+}
+.clickyCards{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.clickyCards img{
+	width: 100%;
 }

@@ -3,66 +3,41 @@
 
 	<head>
 		<link rel="stylesheet" href="styles.css">
-	
+
 	</head>
 
 	<body>
 		<header>
 			<div class="container">
-			
+
 				<nav>
 					<ul>
 						<li><a href="index.html"> Home</a></li>
 						<li><a href="About.html">About</a></li>
 						<li><a href="Projects.html">Projects</a></li>
-						<li><a href="Freelance.html">Freelance</a></li>
+						<li><a href="Freelance.html">Qualifications</a></li>
 						<li><a href="Upcoming.html">Upcoming</a></li>
 						<li><a href="Contact.html">Contact</a></li>
 					</ul>
 				</nav>
-			
+
 			</div>
 		</header>
-		
-		<h1>"Candidate Sorter 2000"</h1>
-		<p>Using some of the most advanced computing algorithms available today, this page will help make better hiring decisions about potential employers</p>
-		<p>Though the majority of how it works must be kept secret, we can reveal the basics of how it works;</p>
-		<p>In short, the name of a prospective worker is entered in the box, the name is looked up in an advanced database, and if the subject is a viable worker, the verdict is returned as a hit.</p>
-		<p>We can say that our machine is, as far as could be told from our testing, 100% accurate!</p>
-		<p>Go ahead and try it.  Simply enter the name of an employee below, and a highly accurate hiring decision will be presented</p>
-		<p>First Name: <input id="first_name">	Last Name: <input id="last_name">	<button onclick="myFunction()">Submit</button>
-		<p id="results"></p>
-		
-		<script>
-			function myFunction(){
-				var first, text;
-					first = document.getElementById("first_name").value;
-				var fUp = first.toUpperCase();
-				var last, text;
-					last = document.getElementById("last_name").value;
-				var lUp = last.toUpperCase();
-				if(fUp == "LEVI" && lUp == "MASTERS"){
-					text = "Our database shows that this is a good candidate!";
-				}
-				else if(fUp.length < 1 || lUp.length < 1){
-					text = "Pleases enter a first and last name";
-				}
-				else{
-					text = "There was no match to your requirements under this name.";
-				}
-				document.getElementById("results").innerHTML = text;
-			}
-		</script>
-		<br>
-		<br>
-		<h1>"Base 10 to Binary"</h1>
-		<a href="Base_10_to_Binary_Final.py" download="Base_10_to_Binary_Final.py">Download Source Code</a>
-		<p>The file must be run within the python idle</p>
-		<p>
-		<img src="10_Binary_Source_Screenshot.png"/>
-		<p>The program starts with user input.  It then looks to see if the number the user input it a power of two (2^some number). If it is, that number becomes n.  If it is not, it finds closest power of two below it.  Then the program tests to see if the base (user input) can be divided by n.  When it can, it prints one, when it cannot, it prints a 0.  Each time it tests if b is divisible by n, n gets divided by two, becoming the next lowest power of two.  This test is run until n becomes 1, and our last digit in binary is stated.</p>
-		<p><img src="10_to_binary_picture.png"/></p>
-		<p>I am currently working on creating a python checkers game.  Once I finish it, I would like to try and set up a neural network that learns optimal playing strategies</p>
-		
+		<div class="mainContent">
+			<h1>GameFrame: Portable gaming solution</h1>
+			<p>The GameFrame is a portable gaming device designed for those who want something more than tapping a screen or keyboard in their gaming experience. It provides a more physical way of interacting with a game, which is something usually restricted to arcades. This device is a stand alone gaming board capable of chess, Connect-4, and Tic-Tac-Toe. It can be played with two players against each other or one player against the AI. The GameFrame is intended to be an enjoyable on the go experience. This machine utilizes an 8x8 grid of buttons that displays the current status of the game and also allows the user to make moves by pressing them. The GameFrame has the versatility for additional games to enhance the user experience. The additional games will only need to be implemented via software configuration.</p>
+			<p>My role on this project was the lead programmer on the development team.  I was primarily responsible for the backend application that the GameFrame runs games on. The logic system of the game as well as the AI that played against the user in single player mode. I was largely responsible for testing and partially integrating the engine for usage on the hardware itself.</p>
+			<br>
+
+			<h1>Bestfit Seating</h1>
+			<p>This product is for any individual or organization organizing an event who need to seat their guests in a way which helps the event flow more smoothly. The interactive seating chart leads to better organization of your event and less stress during event planning. Unlike many other floor planning programs which allow the user to create a layout of their event and seat their guests, our product offers an automated way of planning a seating chart based on the guest preferences.</p>
+			<p>My roles in this project included testing, integration, feature design, and document upkeep. The main function of the project was to learn and implement agile software development and enhanced our abilities to work as a team.</p>
+			<p>The site was live at some point, however webhosting may have run out.  If it is still live, it is hosted on <a href="http://bestfitseating.brunoebihara.com/" target="_blank">Bruno's site here</a>.  If it is not currently live, the code can still be found <a href="https://github.com/COP4331-Group13/BestProjectEver" target="_blank">on GitHub here</a>
+			<br>
+
+
+
+		</div>
+
 	</body>
 </html>
